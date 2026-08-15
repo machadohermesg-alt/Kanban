@@ -61,16 +61,23 @@ main{
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .colunas{
     background-color: rgb(253, 253, 253);
     justify-content: center;
     width: 30%;
     display: inline;
+     min-width: 280px;
     border-radius: 8px;
     margin: 20px auto;
     border-color: rgb(8, 8, 8);
     border-style: groove;
+}
+@media (max-width: 900px) {
+    .colunas {
+        width: 90%; 
+    }
 }
 .tarefa{
     background-color: rgb(222, 240, 144);
